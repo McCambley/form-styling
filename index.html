@@ -5,9 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>Document</title>
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/274/pencil_270f-fe0f.png">
+    <title>Form Styling</title>
 </head>
-<body>
-    
+<body class="page">
+  <form class="form">
+    <h2 class="form__title">Add your comment</h2>
+    <fieldset class="form__text-field">
+      <label for="first-name" class="form__text-label">First Name</label>
+      <input type="text" id="first-name" class="form__text-input">
+      <label for="surname" class="form__text-label">Last Name</label>
+      <input type="text" id="surname" class="form__text-input">
+      <label for="comment" class="form__text-label">Comment</label>
+      <textarea id="comment" cols="30" rows="10" class="form__textarea"></textarea>
+    </fieldset>
+    <fieldset class="form__radio-field">
+      <div class="form__radio-container">
+        <input type="radio" name="privacy" id="private" checked>
+        <label for="private" class="form__radio-label">Keep Anonymous</label>
+      </div>
+      <div class="form__radio-container">
+        <input type="radio" name="privacy" id="public">
+        <label for="public" class="form__radio-label">Make public</label>
+      </div>
+    </fieldset>
+  </form>
 </body>
 </html>

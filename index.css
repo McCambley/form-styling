@@ -1,0 +1,77 @@
+.page {
+  min-width: 1100px;
+  /* we don't know how to make mobile versions of websites yet, */
+  /* so here we've set a minimum page width */
+  max-width: 1600px;
+  /* here we've set a maximum page width */
+  margin: 0 auto;
+  /* this ensures that all content is centered on screens wider than 1600px */
+  font-family: 'Helvetica Nue', sans-serif;
+  list-style: none;
+  background-color: #e1d3c1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+}
+
+.form {
+  width: 400px;
+  max-height: 600px;
+  background-color: antiquewhite;
+  padding: 25px;
+}
+
+.form__title {
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.form__text-field {
+  border: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.form__text-label {
+  margin: 0;
+  font-size: 20px;
+  position: relative;
+  height: 10px;
+  top: 17px;
+  left: 10px;
+  color: grey;
+}
+
+.form__text-input {
+  margin: 0 0 15px;
+  height: 30px;
+}
+
+.form__textarea {
+  margin: 0 0 10px;
+}
+
+.form__radio-field {
+  border: none;
+  padding: 0;
+}
+
+.form__radio-container {
+  margin: 0 0 5px;
+}
+
+.form__radio-label {
+  margin: 0;
+}
