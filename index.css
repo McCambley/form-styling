@@ -19,17 +19,22 @@
   padding-top: 100px;
 }
 
+/* form field */
+
 .form {
   width: 400px;
   max-height: 600px;
   background-color: antiquewhite;
   padding: 25px;
+  border-radius: 2%;
 }
 
 .form__title {
   text-align: center;
   margin: 0 0 10px;
 }
+
+/* name and surname field */
 
 .form__text-field {
   border: none;
@@ -49,19 +54,84 @@
   font-size: 20px;
   position: relative;
   height: 10px;
-  top: 17px;
+  top: -44px;
   left: 10px;
   color: grey;
+  transition: font-size .3s ease, left .3s ease, top .3s ease, color .3s ease;
 }
 
 .form__text-input {
   margin: 0 0 15px;
   height: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  padding-left: 10px;
 }
+
+.form__text-label:hover {
+  cursor: text;
+}
+
+.form__text-input:focus + .form__text-label {
+  top: -60px;
+  left: 5px;
+  color: black;
+  font-size: 8px;
+}
+
+.form__text-input:hover + .form__text-label {
+  color: black;
+}
+
+.form__text-input:focus {
+  outline-color: rgb(70, 70, 70);
+  background-color: bisque;
+}
+
+
+/* comment field */
 
 .form__textarea {
   margin: 0 0 10px;
+  resize: none;
+  background-color: transparent;
+  padding-left: 10px;
+  padding-top: 10px;
 }
+
+.form__textarea-label {
+  margin: 0;
+  font-size: 20px;
+  position: relative;
+  height: 10px;
+  top: -168px;
+  left: 10px;
+  color: grey;
+  transition: font-size .3s ease, left .3s ease, top .3s ease, color .3s ease;
+}
+
+.form__textarea-label:hover {
+  cursor: text;
+}
+
+.form__textarea:focus + .form__textarea-label {
+  top: -185px;
+  left: 5px;
+  color: black;
+  font-size: 8px;
+}
+
+.form__textarea:hover + .form__textarea-label {
+  color: black;
+}
+
+.form__textarea:focus {
+  background-color: bisque;
+  outline-color: rgb(70, 70, 70);
+}
+
+/* radio field */
 
 .form__radio-field {
   border: none;
