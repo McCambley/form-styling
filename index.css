@@ -151,18 +151,40 @@
   display: inline-flex;
   align-items: center;
   cursor: pointer;
+  color: gray;
 }
 
 .form__custom-radio {
-  height: 1em;
-  width: 1em;
+  height: 1.2em;
+  width: 1.2em;
   margin-right: 5px;
   transform: scale(0);
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  transition: transform .2s ease-in-out ;
+  transition: transform .2s ease-in-out;
 }
 
-.form__radio:checked + .form__custom-radio {
-  background: black;
-  transform: scale(1)
+.form__radio-label-text {
+  color: gray;
+  font-weight: 400;
+  transition: color .2s ease-in-out;
+}
+
+.form__radio[id="private"]:checked + .form__custom-radio {
+  background: transparent;
+  transform: scale(1);
+  content: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/microsoft/209/face-with-finger-covering-closed-lips_1f92b.png")
+}
+
+.form__radio[id="public"]:checked + .form__custom-radio {
+  transform: scale(1);
+  content: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/microsoft/209/eyes_1f440.png")
+}
+
+.form__radio-label-text:hover {
+  /* font-weight: 700; */
+  color: rgb(87, 87, 87)
+}
+
+.form__radio:checked ~ .form__radio-label-text {
+  color: black;
+  /* font-weight: bold; */
 }
