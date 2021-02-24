@@ -8,11 +8,11 @@
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Nue', sans-serif;
   list-style: none;
-  background-color: #e1d3c1;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #7E5F4E;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -24,7 +24,7 @@
 .form {
   width: 400px;
   max-height: 600px;
-  background-color: antiquewhite;
+  background-color: #faebd7;
   padding: 25px;
   border-radius: 2%;
 }
@@ -56,15 +56,17 @@
   height: 10px;
   top: -44px;
   left: 10px;
-  color: grey;
-  transition: font-size .3s ease, left .3s ease, top .3s ease, color .3s ease;
+  color: #AA8874;
+  /* transition: font-size .3s ease, left .3s ease, top .3s ease, color .3s ease; */
+  transition: all .3s ease;
 }
 
 .form__text-input {
   margin: 0 0 15px;
+  color: #7E5F4E;
   height: 30px;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #7E5F4E;
   background: transparent;
   padding-left: 10px;
 }
@@ -76,17 +78,17 @@
 .form__text-input:focus + .form__text-label {
   top: -60px;
   left: 5px;
-  color: black;
+  color: #7E5F4E;
   font-size: 8px;
 }
 
 .form__text-input:hover + .form__text-label {
-  color: black;
+  color: #7E5F4E;
 }
 
 .form__text-input:focus {
-  outline-color: rgb(70, 70, 70);
-  background-color: bisque;
+  outline-color: #7E5F4E;
+  background-color: #FFE3C2;
 }
 
 
@@ -94,10 +96,13 @@
 
 .form__textarea {
   margin: 0 0 10px;
+  font-family: inherit;
+  color: #7E5F4E;
   resize: none;
   background-color: transparent;
   padding-left: 10px;
   padding-top: 10px;
+  border: 1px solid #7E5F4E;
 }
 
 .form__textarea-label {
@@ -107,8 +112,9 @@
   height: 10px;
   top: -168px;
   left: 10px;
-  color: grey;
-  transition: font-size .3s ease, left .3s ease, top .3s ease, color .3s ease;
+  color: #AA8874;
+  /* transition: font-size .3s ease, left .3s ease, top .3s ease, color .3s ease; */
+  transition: all .3s ease;
 }
 
 .form__textarea-label:hover {
@@ -118,17 +124,17 @@
 .form__textarea:focus + .form__textarea-label {
   top: -185px;
   left: 5px;
-  color: black;
+  color: #7E5F4E;
   font-size: 8px;
 }
 
 .form__textarea:hover + .form__textarea-label {
-  color: black;
+  color: #7E5F4E;
 }
 
 .form__textarea:focus {
-  background-color: bisque;
-  outline-color: rgb(70, 70, 70);
+  background-color: #FFE3C2;
+  outline-color: #7E5F4E;
 }
 
 /* radio field */
@@ -151,7 +157,7 @@
   display: inline-flex;
   align-items: center;
   cursor: pointer;
-  color: gray;
+  color: #AA8874;
 }
 
 .form__custom-radio {
@@ -163,7 +169,7 @@
 }
 
 .form__radio-label-text {
-  color: gray;
+  color: #AA8874;
   font-weight: 400;
   transition: color .2s ease-in-out;
 }
@@ -181,10 +187,10 @@
 
 .form__radio-label-text:hover {
   /* font-weight: 700; */
-  color: rgb(87, 87, 87)
+  color: #7E5F4E;
 }
 
 .form__radio:checked ~ .form__radio-label-text {
-  color: black;
+  color: #7E5F4E;
   /* font-weight: bold; */
 }
